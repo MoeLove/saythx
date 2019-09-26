@@ -26,5 +26,4 @@ jobs:
         kubectl create ns work
         kubectl create -f deploy
         kubectl wait --for=condition=Ready pods -n work --all --timeout=5m
-        which helm
-        helm version
+        kubectl get all --all-namespaces
