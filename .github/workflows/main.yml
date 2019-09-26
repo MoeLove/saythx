@@ -23,5 +23,8 @@ jobs:
         export KUBECONFIG="$(kind get kubeconfig-path)"
         kubectl wait --for=condition=Ready nodes --all --timeout=5m
         kubectl get nodes
+        kubectl create ns work
         kubectl create -f deploy
         kubectl wait --for=condition=Ready pods -n work --all --timeout=5m
+        which helm
+        helm version
