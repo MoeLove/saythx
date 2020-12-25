@@ -4,7 +4,6 @@ metadata:
   labels:
     app: backend
   name: saythx-backend
-  namespace: work
 spec:
   selector:
     matchLabels:

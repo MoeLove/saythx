@@ -4,7 +4,6 @@ metadata:
   labels:
     app: redis
   name: saythx-redis
-  namespace: work
 spec:
   ports:
   - protocol: TCP
